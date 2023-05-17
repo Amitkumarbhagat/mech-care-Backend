@@ -49,7 +49,7 @@ $msg="Testimonial Successfully Active";
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
 	
-	<title>Car Rental Portal |Admin Manage testimonials   </title>
+	<title>mech care |Admin Manage request   </title>
 
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -113,7 +113,7 @@ $msg="Testimonial Successfully Active";
 										<th>#</th>
 											<th>Name</th>
 											<th>Email</th>
-											<th>Testimonials</th>
+											<th>requestings</th>
 											<th>Posting date</th>
 											<th>Action</th>
 										</tr>
@@ -123,7 +123,7 @@ $msg="Testimonial Successfully Active";
 										<th>#</th>
 											<th>Name</th>
 											<th>Email</th>
-											<th>Testimonials</th>
+											<th>requestings</th>
 											<th>Posting date</th>
 											<th>Action</th>
 										</tr>

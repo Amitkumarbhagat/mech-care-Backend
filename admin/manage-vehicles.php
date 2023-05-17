@@ -32,7 +32,7 @@ $msg="Vehicle  record deleted successfully";
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
 	
-	<title>Car Rental Portal |Admin Manage Vehicles   </title>
+	<title>mech care |Admin Manage Vehicles   </title>
 
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -82,11 +82,11 @@ $msg="Vehicle  record deleted successfully";
 				<div class="row">
 					<div class="col-md-12">
 
-						<h2 class="page-title">Manage Vehicles</h2>
+						<h2 class="page-title">Manage Garage</h2>
 
 						<!-- Zero Configuration Table -->
 						<div class="panel panel-default">
-							<div class="panel-heading">Vehicle Details</div>
+							<div class="panel-heading">Shop Details</div>
 							<div class="panel-body">
 							<?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
 				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
@@ -96,7 +96,7 @@ $msg="Vehicle  record deleted successfully";
 										<th>#</th>
 											<th>Vehicle Title</th>
 											<th>Brand </th>
-											<th>Price Per day</th>
+											<th>Price Per day for storing vehicle in garage</th>
 											<th>Fuel Type</th>
 											<th>Model Year</th>
 											<th>Action</th>

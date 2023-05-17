@@ -20,7 +20,7 @@ $query->execute();
 $lastInsertId = $dbh->lastInsertId();
 if($lastInsertId)
 {
-$msg="Testimonail submitted successfully";
+$msg="Request submitted successfully";
 }
 else 
 {
@@ -37,7 +37,7 @@ $error="Something went wrong. Please try again";
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="keywords" content="">
 <meta name="description" content="">
-<title>Car Rental Portal |Post testimonial</title>
+<title>Car services |Post request</title>
 <!--Bootstrap -->
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
 <!--Custome Style -->
@@ -99,11 +99,11 @@ $error="Something went wrong. Please try again";
   <div class="container">
     <div class="page-header_wrap">
       <div class="page-heading">
-        <h1>Post Testimonial</h1>
+        <h1>Post request</h1>
       </div>
       <ul class="coustom-breadcrumb">
         <li><a href="#">Home</a></li>
-        <li>Post Testimonial</li>
+        <li>Post request</li>
       </ul>
     </div>
   </div>
@@ -142,14 +142,14 @@ foreach($results as $result)
         <?php include('includes/sidebar.php');?>
       <div class="col-md-6 col-sm-8">
         <div class="profile_wrap">
-          <h5 class="uppercase underline">Post a Testimonial</h5>
+          <h5 class="uppercase underline">Post a Request</h5>
             <?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
         else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
           <form  method="post">
           
           
             <div class="form-group">
-              <label class="control-label">Testimonail</label>
+              <label class="control-label">Request</label>
               <textarea class="form-control white_bg" name="testimonial" rows="4" required=""></textarea>
             </div>
           

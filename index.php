@@ -136,16 +136,16 @@ foreach($results as $result)
       <div class="col-lg-3 col-xs-6 col-sm-3">
         <div class="fun-facts-m">
           <div class="cell">
-            <h2><i class="fa fa-car" aria-hidden="true"></i>1200+</h2>
-            <p>New Cars For Sale</p>
+            <h2><i class="fa fa-car" aria-hidden="true"></i>120+</h2>
+            <p>Services everyday</p>
           </div>
         </div>
       </div>
       <div class="col-lg-3 col-xs-6 col-sm-3">
         <div class="fun-facts-m">
           <div class="cell">
-            <h2><i class="fa fa-car" aria-hidden="true"></i>1000+</h2>
-            <p>Used Cars For Sale</p>
+            <h2><i class="fa fa-car" aria-hidden="true"></i>10000+</h2>
+            <p>Happy customer</p>
           </div>
         </div>
       </div>
@@ -189,6 +189,24 @@ foreach($results as $result)
 
         <div class="testimonial-m">
           <div class="testimonial-img"> <img src="assets/images/cat-profile.png" alt="" /> </div>
+          <div class="testimonial-content">
+            <div class="testimonial-heading">
+              <h5><?php echo htmlentities($result->FullName);?></h5>
+            <p><?php echo htmlentities($result->Testimonial);?></p>
+          </div>
+        </div>
+        </div>
+        <div class="testimonial-m">
+          <div class="testimonial-img"> <img src="assets/images/cat-profile2.png" alt="" /> </div>
+          <div class="testimonial-content">
+            <div class="testimonial-heading">
+              <h5><?php echo htmlentities($result->FullName);?></h5>
+            <p><?php echo htmlentities($result->Testimonial);?></p>
+          </div>
+        </div>
+        </div>
+        <div class="testimonial-m">
+          <div class="testimonial-img"> <img src="assets/images/cat-profile3.png" alt="" /> </div>
           <div class="testimonial-content">
             <div class="testimonial-heading">
               <h5><?php echo htmlentities($result->FullName);?></h5>

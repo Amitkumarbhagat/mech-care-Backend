@@ -73,7 +73,7 @@ $msg="Data updated successfully";
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
 	
-	<title>Car Rental Portal | Admin Edit Vehicle Info</title>
+	<title>mech care | Admin Edit Vehicle Info</title>
 
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -121,7 +121,7 @@ $msg="Data updated successfully";
 				<div class="row">
 					<div class="col-md-12">
 					
-						<h2 class="page-title">Edit Vehicle</h2>
+						<h2 class="page-title">Edit shope</h2>
 
 						<div class="row">
 							<div class="col-md-12">
@@ -175,7 +175,7 @@ continue;
 											
 <div class="hr-dashed"></div>
 <div class="form-group">
-<label class="col-sm-2 control-label">Vehical Overview<span style="color:red">*</span></label>
+<label class="col-sm-2 control-label">shope Overview<span style="color:red">*</span></label>
 <div class="col-sm-10">
 <textarea class="form-control" name="vehicalorcview" rows="3" required><?php echo htmlentities($result->VehiclesOverview);?></textarea>
 </div>
@@ -194,17 +194,18 @@ continue;
 <option value="Petrol">Petrol</option>
 <option value="Diesel">Diesel</option>
 <option value="CNG">CNG</option>
+<option value="CNG">any kind</option>
 </select>
 </div>
 </div>
 
 
 <div class="form-group">
-<label class="col-sm-2 control-label">Model Year<span style="color:red">*</span></label>
+<label class="col-sm-2 control-label">Year of shop<span style="color:red">*</span></label>
 <div class="col-sm-4">
 <input type="text" name="modelyear" class="form-control" value="<?php echo htmlentities($result->ModelYear);?>" required>
 </div>
-<label class="col-sm-2 control-label">Seating Capacity<span style="color:red">*</span></label>
+<label class="col-sm-2 control-label">Seating Capacity of shop<span style="color:red">*</span></label>
 <div class="col-sm-4">
 <input type="text" name="seatingcapacity" class="form-control" value="<?php echo htmlentities($result->SeatingCapacity);?>" required>
 </div>
@@ -212,7 +213,7 @@ continue;
 <div class="hr-dashed"></div>								
 <div class="form-group">
 <div class="col-sm-12">
-<h4><b>Vehicle Images</b></h4>
+<h4><b>shope Images</b></h4>
 </div>
 </div>
 

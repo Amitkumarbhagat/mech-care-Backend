@@ -16,7 +16,7 @@ $query->execute();
 $lastInsertId = $dbh->lastInsertId();
 if($lastInsertId)
 {
-echo "<script>alert('Registration successfull. Now you can login');</script>";
+echo "<script>alert('Registration successfull. Now you can login on MechCare');</script>";
 }
 else 
 {

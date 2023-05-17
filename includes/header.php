@@ -11,18 +11,17 @@
             <div class="header_widgets">
               <div class="circle_icon"> <i class="fa fa-envelope" aria-hidden="true"></i> </div>
               <p class="uppercase_text">For Support Mail us : </p>
-              <a href="mailto:info@example.com">codeprojectsorg@gmail.com</a> </div>
+              <a href="mailto:info@example.com">mechcare@gmail.com</a> </div>
             <div class="header_widgets">
               <div class="circle_icon"> <i class="fa fa-phone" aria-hidden="true"></i> </div>
               <p class="uppercase_text">Service Helpline Call Us: </p>
-              <a href="tel:61-1234-5678-09">+91-9876543210</a> </div>
+              <a href="tel:61-1234-5678-09">+91-123456789</a> </div>
             <div class="social-follow">
               <ul>
-                <li><a href="https://code-projects.org/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-                <li><a href="https://code-projects.org/"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-                <li><a href="https://code-projects.org/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-                <li><a href="https://code-projects.org/"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></li>
-                <li><a href="https://code-projects.org/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              <li><a href="https://www.facebook.com/amitbhagat2506"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+              <li><a href="https://twitter.com/Amitb2506"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/amitbhagat2506/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+              <li><a href="https://www.instagram.com/amitbhagat2506/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
               </ul>
             </div>
    <?php   if(strlen($_SESSION['login'])==0)
@@ -32,7 +31,7 @@
 <?php }
 else{
 
-echo "Welcome To Car rental portal";
+echo "Welcome To Mech-Care portal";
  } ?>
           </div>
         </div>
@@ -68,15 +67,15 @@ foreach($results as $result)
             <li><a href="profile.php">Profile Settings</a></li>
               <li><a href="update-password.php">Update Password</a></li>
             <li><a href="my-booking.php">My Booking</a></li>
-            <li><a href="post-testimonial.php">Post a Testimonial</a></li>
-          <li><a href="my-testimonials.php">My Testimonial</a></li>
+            <li><a href="post-testimonial.php">Post a Request</a></li>
+          <li><a href="my-testimonials.php">My Request</a></li>
             <li><a href="logout.php">Sign Out</a></li>
             <?php } else { ?>
             <li><a href="#loginform"  data-toggle="modal" data-dismiss="modal">Profile Settings</a></li>
               <li><a href="#loginform"  data-toggle="modal" data-dismiss="modal">Update Password</a></li>
             <li><a href="#loginform"  data-toggle="modal" data-dismiss="modal">My Booking</a></li>
-            <li><a href="#loginform"  data-toggle="modal" data-dismiss="modal">Post a Testimonial</a></li>
-          <li><a href="#loginform"  data-toggle="modal" data-dismiss="modal">My Testimonial</a></li>
+            <li><a href="#loginform"  data-toggle="modal" data-dismiss="modal">Post a Request</a></li>
+          <li><a href="#loginform"  data-toggle="modal" data-dismiss="modal">My Request</a></li>
             <li><a href="#loginform"  data-toggle="modal" data-dismiss="modal">Sign Out</a></li>
             <?php } ?>
           </ul>
@@ -96,7 +95,7 @@ foreach($results as $result)
           <li><a href="index.php">Home</a>    </li>
 
           <li><a href="page.php?type=aboutus">About Us</a></li>
-          <li><a href="car-listing.php">Car Listing</a>
+          <li><a href="car-listing.php">video listing</a>
           <li><a href="page.php?type=faqs">FAQs</a></li>
           <li><a href="contact-us.php">Contact Us</a></li>
 

@@ -37,7 +37,7 @@ $msg="Image updated successfully";
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
 	
-	<title>Car Rental Portal | Admin Update Image 4</title>
+	<title>mech care| Admin Update Image 4</title>
 
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -87,12 +87,12 @@ $msg="Image updated successfully";
 				<div class="row">
 					<div class="col-md-12">
 					
-						<h2 class="page-title">Vehicle Image 4 </h2>
+						<h2 class="page-title">shop Image 4 </h2>
 
 						<div class="row">
 							<div class="col-md-10">
 								<div class="panel panel-default">
-									<div class="panel-heading">Vehicle Image 4 Details</div>
+									<div class="panel-heading">shop Image 4 Details</div>
 									<div class="panel-body">
 										<form method="post" class="form-horizontal" enctype="multipart/form-data">
 										

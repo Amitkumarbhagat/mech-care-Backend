@@ -42,7 +42,7 @@ echo "<script>alert('Something went wrong. Please try again');</script>";
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="keywords" content="">
 <meta name="description" content="">
-<title>Car Rental Port | Vehicle Details</title>
+<title>Mech Care</title>
 <!--Bootstrap -->
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
 <!--Custome Style -->
@@ -153,7 +153,7 @@ $_SESSION['brndid']=$result->bid;
           <div class="listing_detail_wrap"> 
             <!-- Nav tabs -->
             <ul class="nav nav-tabs gray-bg" role="tablist">
-              <li role="presentation" class="active"><a href="#vehicle-overview " aria-controls="vehicle-overview" role="tab" data-toggle="tab">Vehicle Overview </a></li>
+              <li role="presentation" class="active"><a href="#vehicle-overview " aria-controls="vehicle-overview" role="tab" data-toggle="tab">Garage Overview </a></li>
           
               <li role="presentation"><a href="#accessories" aria-controls="accessories" role="tab" data-toggle="tab">Accessories</a></li>
             </ul>
@@ -361,7 +361,7 @@ $_SESSION['brndid']=$result->bid;
     
     <!--Similar-Cars-->
     <div class="similar_cars">
-      <h3>Similar Cars</h3>
+      <h3>Similar Shop near you</h3>
       <div class="row">
 <?php 
 $bid=$_SESSION['brndid'];
@@ -385,7 +385,7 @@ foreach($results as $result)
           
               <ul class="features_list">
                 
-             <li><i class="fa fa-user" aria-hidden="true"></i><?php echo htmlentities($result->SeatingCapacity);?> seats</li>
+             <li><i class="fa fa-user" aria-hidden="true"></i><?php echo htmlentities($result->SeatingCapacity);?> garage seats</li>
                 <li><i class="fa fa-calendar" aria-hidden="true"></i><?php echo htmlentities($result->ModelYear);?> model</li>
                 <li><i class="fa fa-car" aria-hidden="true"></i><?php echo htmlentities($result->FuelType);?></li>
               </ul>

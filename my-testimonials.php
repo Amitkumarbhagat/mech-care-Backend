@@ -17,7 +17,7 @@ else{
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="keywords" content="">
 <meta name="description" content="">
-<title>Car Rental Portal | My Testimonials </title>
+<title>Broken down car services | My Request </title>
 <!--Bootstrap -->
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
 <!--Custome Style -->
@@ -61,11 +61,11 @@ else{
   <div class="container">
     <div class="page-header_wrap">
       <div class="page-heading">
-        <h1>My Testimonials</h1>
+        <h1>My Request</h1>
       </div>
       <ul class="coustom-breadcrumb">
         <li><a href="#">Home</a></li>
-        <li>My Testimonials</li>
+        <li>My Requests</li>
       </ul>
     </div>
   </div>

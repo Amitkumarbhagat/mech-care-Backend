@@ -12,7 +12,7 @@ error_reporting(0);
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="keywords" content="">
 <meta name="description" content="">
-<title>Car Rental Portal | Car Listing</title>
+<title>Mechcare Portal | Shop listing</title>
 <!--Bootstrap -->
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
 <!--Custome Style -->
@@ -59,11 +59,11 @@ error_reporting(0);
   <div class="container">
     <div class="page-header_wrap">
       <div class="page-heading">
-        <h1>Car Listing</h1>
+        <h1> Shop listing</h1>
       </div>
       <ul class="coustom-breadcrumb">
         <li><a href="#">Home</a></li>
-        <li>Car Listing</li>
+        <li> Shop listing</li>
       </ul>
     </div>
   </div>
@@ -129,13 +129,13 @@ foreach($results as $result)
       <aside class="col-md-3 col-md-pull-9">
         <div class="sidebar_widget">
           <div class="widget_heading">
-            <h5><i class="fa fa-filter" aria-hidden="true"></i> Find Your  Car </h5>
+            <h5><i class="fa fa-filter" aria-hidden="true"></i> Find Your nearest shop </h5>
           </div>
           <div class="sidebar_filter">
           <form action="search-carresult.php" method="post">
               <div class="form-group select">
               <select class="form-control" name="brand">
-              <option>Select Brand</option>
+              <option>Select shop</option>
 
                   <?php $sql = "SELECT * from  tblbrands ";
 $query = $dbh -> prepare($sql);
@@ -161,7 +161,7 @@ foreach($results as $result)
               </div>
              
               <div class="form-group">
-                <button type="submit" class="btn btn-block"><i class="fa fa-search" aria-hidden="true"></i> Search Car</button>
+                <button type="submit" class="btn btn-block"><i class="fa fa-search" aria-hidden="true"></i> Search Shop</button>
               </div>
             </form>
           </div>
@@ -169,7 +169,7 @@ foreach($results as $result)
 
         <div class="sidebar_widget">
           <div class="widget_heading">
-            <h5><i class="fa fa-car" aria-hidden="true"></i> Recently Listed Cars</h5>
+            <h5><i class="fa fa-car" aria-hidden="true"></i> Recently Listed Shop</h5>
           </div>
           <div class="recent_addedcars">
             <ul>
