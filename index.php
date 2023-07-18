@@ -35,6 +35,18 @@ error_reporting(0);
 <link rel="apple-touch-icon-precomposed" href="assets/images/favicon-icon/apple-touch-icon-57-precomposed.png">
 <link rel="shortcut icon" href="assets/images/favicon-icon/favicon.png">
 <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet"> 
+<style>
+    #locationButton {
+      background-color: #2dcc70;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+    #locationResult {
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
 
@@ -76,10 +88,13 @@ error_reporting(0);
       <!-- Nav tabs -->
       <div class="recent-tab">
         <ul class="nav nav-tabs" role="tablist">
-          <li role="presentation" class="active"><a href="#resentnewcar" role="tab" data-toggle="tab">for best suited rating turn on location</a></li>
+          <li role="presentation" class="active"><a href="#resentnewcar" role="tab" data-toggle="tab"><button id="locationButton">Get Current Location</button></a></li>
         </ul>
-
+        <ul style="list-style-type: none; text-align: center;">
+        <li style="background-color: #2dcc70; color: white;"><div id="locationResult"></div></li>
+        </ul>
       </div>
+      
       <!-- Recently Listed New Cars -->
       <div class="tab-content">
         <div role="tabpanel" class="tab-pane active" id="resentnewcar">
@@ -106,7 +121,7 @@ foreach($results as $result)
 </div>
 <div class="car-title-m">
 <h6><a href="vehical-details.php?vhid=<?php echo htmlentities($result->id);?>"><?php echo htmlentities($result->BrandName);?> , <?php echo htmlentities($result->VehiclesTitle);?></a></h6>
-<span class="price">$<?php echo htmlentities($result->PricePerDay);?> /Day</span> 
+<span class="price">₹ <?php echo htmlentities($result->PricePerDay);?> / Visit</span> 
 </div>
 <div class="inventory_info_m">
 <p><?php echo substr($result->VehiclesOverview,0,70);?></p>
@@ -128,7 +143,7 @@ foreach($results as $result)
       <div class="col-lg-3 col-xs-6 col-sm-3">
         <div class="fun-facts-m">
           <div class="cell">
-            <h2><i class="fa fa-calendar" aria-hidden="true"></i>40+</h2>
+            <h2><i class="fa fa-calendar" aria-hidden="true"></i>1</h2>
             <p>Years In Business</p>
           </div>
         </div>
@@ -136,7 +151,7 @@ foreach($results as $result)
       <div class="col-lg-3 col-xs-6 col-sm-3">
         <div class="fun-facts-m">
           <div class="cell">
-            <h2><i class="fa fa-car" aria-hidden="true"></i>120+</h2>
+            <h2><i class="fa fa-car" aria-hidden="true"></i>1</h2>
             <p>Services everyday</p>
           </div>
         </div>
@@ -144,7 +159,7 @@ foreach($results as $result)
       <div class="col-lg-3 col-xs-6 col-sm-3">
         <div class="fun-facts-m">
           <div class="cell">
-            <h2><i class="fa fa-car" aria-hidden="true"></i>10000+</h2>
+            <h2><i class="fa fa-car" aria-hidden="true"></i>1</h2>
             <p>Happy customer</p>
           </div>
         </div>
@@ -152,7 +167,7 @@ foreach($results as $result)
       <div class="col-lg-3 col-xs-6 col-sm-3">
         <div class="fun-facts-m">
           <div class="cell">
-            <h2><i class="fa fa-user-circle-o" aria-hidden="true"></i>600+</h2>
+            <h2><i class="fa fa-user-circle-o" aria-hidden="true"></i>6</h2>
             <p>Satisfied Customers</p>
           </div>
         </div>
@@ -259,6 +274,27 @@ foreach($results as $result)
 <!--Slider-JS--> 
 <script src="assets/js/slick.min.js"></script> 
 <script src="assets/js/owl.carousel.min.js"></script>
+
+<script>
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+      } else {
+        alert("Geolocation is not supported by this browser.");
+      }
+    }
+
+    function showPosition(position) {
+      var latitude = position.coords.latitude;
+      var longitude = position.coords.longitude;
+
+      var locationResult = document.getElementById("locationResult");
+      locationResult.innerHTML = "Latitude: " + latitude + "<br>Longitude: " + longitude;
+    }
+
+    var locationButton = document.getElementById("locationButton");
+    locationButton.addEventListener("click", getLocation);
+  </script>
 
 </body>
 
